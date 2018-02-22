@@ -1,8 +1,4 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
 
 *, div {
   -webkit-box-sizing: border-box;
@@ -110,6 +106,11 @@ html, body {
   max-width: 80px;
   color: #533687;
 }
+
+.sw .search:focus + .go svg {
+  fill: #533687;
+}
+
 .sw .search:focus + .go + a.logo {
   visibility: hidden;
   opacity: 0;
@@ -133,6 +134,13 @@ html, body {
   transition: all 0.05s ease-in-out;
   font-size: 21px;
   outline: none;
+  padding-top: 5px;
+}
+
+.go svg {
+  width: 18px;
+  height: 24px;
+  fill: #ccc;
 }
 
 .content {
